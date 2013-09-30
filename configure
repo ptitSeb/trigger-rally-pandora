@@ -5130,6 +5130,8 @@ if test "x$GL_CFLAGS" = "x" -a "x$GL_LIBS" = "x"; then
 	as_fn_error $? "Couldn't find OpenGL library and headers" "$LINENO" 5
 fi
 
+GLES_CM_CFLAGS=""
+GLES_CM_LIBS="-lGLES_CM -lEGL -lGLUES_CM"
 GLU_CFLAGS="${GL_CFLAGS}"
 if test "X${with_apple_opengl_framework}" != "Xyes"; then
   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for OpenGL Utility library" >&5
