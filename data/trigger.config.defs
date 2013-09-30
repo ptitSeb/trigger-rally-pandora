@@ -3,7 +3,7 @@
 	
 	<video
 		width="800"
-		height="600"
+		height="480"
 		bpp="0"
 		
 		fullscreen="yes"
