@@ -1,0 +1,10 @@
+SubDir TOP src trigger ;
+
+Help trigger : "Build trigger (main application)" ;
+Application trigger : [ Wildcard *.cpp *.h ] ;
+LinkWith trigger : pengine psim ;
+#LinkWith trigger : pengine psim glew ;
+ExternalLibs trigger : SDL SDLIMAGE GLES_CM EGL GLUES AUDIOLIB PHYSFS ;
+#ExternalLibs trigger : SDL SDLIMAGE GL GLU AUDIOLIB PHYSFS ;
+
+#IncludeDir trigger : ../glew ;
